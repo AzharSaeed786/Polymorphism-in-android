@@ -1,8 +1,10 @@
 # Polymorphism-in-android
 ListViews aur RecyclerViews: In dono me, aap ek adapter ka istemal karte hain jo views ko bind karta hai data sources se. Aap ek base adapter create kar sakte hain jo ki multiple types ke views ko support karta hai. Isse aap alag alag view types ko ek hi adapter ke andar handle kar sakte hain, jo polymorphism ka ek example hai.
 
-Fragments aur Activities: Aap apne Android application me fragments aur activities ka istemal karke UI components ko organize karte hain. Inme, aap ek base fragment ya activity create kar sakte hain jo common functionality provide karta hai, aur phir aap subclasses create karke specific behavior ko override kar sakte hain.
+Activity Lifecycle Methods: Activity class ko extend karte waqt, aapko Activity Lifecycle methods override karne hote hain jaise ki onCreate(), onStart(), onResume(), etc. Yeh ek tarah ka polymorphism hai jahaan aap subclass mein superclass ke method ko override karke apne requirements ke according behavior define kar sakte hain.
 
-Interfaces aur Callbacks: Polymorphism ka ek mukhya concept hai interfaces ka istemal. Aap ek interface define kar sakte hain jo ki multiple classes implement karte hain, aur phir aap in classes ke objects ko ek hi taur par treat kar sakte hain, jaise ki callbacks ke case me hota hai.
+Interface Implementations: Interfaces Android development mein bahut common hai, jaise ki OnClickListener, OnItemSelectedListener, etc. Aap apne class mein in interfaces ko implement karke unke methods ko override kar sakte hain, jisse aap unki functionality ko customize kar sakte hain.
 
-Custom Views: Agar aap custom views develop kar rahe hain, toh aap polymorphism ka istemal karke ek base view create kar sakte hain jo ki common behavior aur properties ko define karta hai. Phir aap is base view ko extend karke alag alag types ke custom views create kar sakte hain jo specific functionality provide karte hain.
+Fragment Transactions: Fragment transactions ke doran, aapko FragmentManager ka istemal hota hai. FragmentManager ke methods ko override karke aap fragment transactions ko customize kar sakte hain, jaise ki add(), replace(), etc.
+
+
